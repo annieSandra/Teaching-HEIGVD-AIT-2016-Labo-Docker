@@ -15,12 +15,12 @@ title: Lab 04 - Docker
 * Put into practice decentralized management of web server instances
 
 
-## ETUDIANTS
+## STUDENTS
 
 * HARBAOUI Yosra
 * DONGMO NGOUMNAI Annie Sandra
 
-## TABLE DES MATIERES
+## TABLE OF CONTENTS
 
 0. [Identify issues and install the tools](#task-0)
 1. [Add a process supervisor to run several processes](#task-1)
@@ -35,54 +35,22 @@ title: Lab 04 - Docker
 
 #### Identify issues
 
-In the previous lab, we built a simple distributed system with a load
-balancer and two web applications. The architecture of our distributed
-web application is shown in the following diagram:
-
-![Architecture](assets/img/initial-architecture.png)
-
-The two web app containers stand for two web servers. They run a
-NodeJS sample application that implements a simple REST API. Each
-container exposes TCP port 3000 to receive HTTP requests.
-
-The HAProxy load balancer is listening on TCP port 80 to receive HTTP
-requests from users. These requests will be forwarded to and
-load-balanced between the web app containers. Additionally it exposes
-TCP ports 1936 and 9999 for the stats page and the command-line
-interface.
-
-For more details about the web application, take a look to the
-[previous lab](https://github.com/SoftEng-HEIGVD/Teaching-HEIGVD-AIT-2015-Labo-02).
-
-Now suppose you are working for a big e-tailer like Galaxus or
-Zalando. Starting with Black Friday and throughout the holiday season
-you see traffic to your web servers increase several times as
-customers are looking for and buying presents. In January the traffic
-drops back again to normal. You want to be able to add new servers as
-the traffic from customers increases and you want to be able to remove
-servers as the traffic goes back to normal.
-
-Suppose further that there is an obscure bug in the web application
-that the developers haven't been able to understand yet. It makes the
-web servers crash unpredictably several times per week. When you
-detect that a web server has crashed you kill its container and you
-launch a new container.
-
-Suppose further currently your web servers and your load balancer are
-deployed like in the previous lab. What are the issues with this
-architecture? Answer the following questions. The questions are
-numbered from `M1` to `M6` to refer to them later in the lab. Please
-give in your report the reference of the question you are answering.
 
 1. <a name="M1"></a>**[M1]** Do you think we can use the current
    solution for a production environment? What are the main problems
    when deploying it in a production environment?
+   
+   **Answer**
+   No, because there is not automatical mechanism to update the HAProxy configuration when we add web server, so that we have to manually update the configuration of the load balancer.
 
 2. <a name="M2"></a>**[M2]** Describe what you need to do to add new
    `webapp` container to the infrastructure. Give the exact steps of
    what you have to do without modifiying the way the things are
    done. Hint: You probably have to modify some configuration and
    script files in a Docker image.
+   
+   **Answer**
+   
 
 3. <a name="M3"></a>**[M3]** Based on your previous answers, you have
    detected some issues in the current solution. Now propose a better
