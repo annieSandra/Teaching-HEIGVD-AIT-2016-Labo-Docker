@@ -14,21 +14,13 @@ title: Lab 04 - Docker
 
 * Put into practice decentralized management of web server instances
 
-#### Instructions for the lab report
 
-This lab builds on a previous lab on load balancing.
+## ETUDIANTS
 
-In this lab you will perform a number of tasks and document your progress in a
-lab report. Each task specifies one or more deliverables to be produced.
-Collect all the deliverables in your lab report. Give the lab report a structure
-that mimics the structure of this document.
+* HARBAOUI Yosra
+* DONGMO NGOUMNAI Annie Sandra
 
-We expect you to have in your repository (you will get the instructions later
-for that) a folder called `report` and a folder called `logs`. Ideally, your
-report should be in Markdown format directly in the repository.
-
-The lab consists of 6 tasks and one initial task (the initial task
-should be quick if you already completed the lab on load balancing):
+## TABLE DES MATIERES
 
 0. [Identify issues and install the tools](#task-0)
 1. [Add a process supervisor to run several processes](#task-1)
