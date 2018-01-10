@@ -30,47 +30,6 @@ title: Lab 04 - Docker
 5. [Generate a new load balancer configuration when membership changes](#task-5)
 6. [Make the load balancer automatically reload the new configuration](#task-6)
 
-**Remarks**:
-
-- In your report reference the task numbers and question numbers of
-  this document.
-
-- The version of HAProxy used in this lab is `1.5`. When reading the
-  documentation, make sure you are looking at this version. Here is
-  the link:
-  <http://cbonte.github.io/haproxy-dconv/configuration-1.5.html>
-
-  **Note**: There is an exception for that later in the lab. The
-  documentation for a part of HAProxy (the command line help) is not
-  available in 1.5. Therefore, we use the doc for 1.6 which is not
-  different for our usage.
-
-- In the report give the URL of the repository that you forked off this lab.
-
-- The images and the web application are a bit different from the lab on load
-  balancing. The web app no longer requires a tag. An environment variable
-  is defined in the Docker files to specify a role for each image. We will see
-  later how to use that.
-
-- We expect, at least, to see in your report:
-
-  - An introduction describing briefly the lab
-
-  - Seven chapters, one for each task (0 to 6)
-
-  - A table of content
-
-  - A chapter named "Difficulties" where you describe the problems you have encountered and
-    the solutions you found
-
-  - A conclusion
-
-**DISCLAIMER**: In this lab, we will go through one possible approach
-to manage a scalable infrastructure where we can add and remove nodes
-without having to rebuild the HAProxy image. This is not the only way
-to achieve this goal. If you do some research you will find a lot of
-tools and services to achieve the same kind of behavior.
-
 
 ### <a name="task-0"></a>Task 0: Identify issues and install the tools
 
