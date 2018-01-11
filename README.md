@@ -1,5 +1,3 @@
-title: Lab 04 - Docker
----
 
 ## Lab 04 - Docker
 
