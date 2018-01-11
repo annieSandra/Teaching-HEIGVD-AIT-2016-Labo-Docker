@@ -40,8 +40,8 @@ title: Lab 04 - Docker
    solution for a production environment? What are the main problems
    when deploying it in a production environment?
    
-   **Answer**
-   No, because there is not automatical mechanism to update the HAProxy configuration when we add web server, so that we have to manually update the configuration of the load balancer.
+   **Answer : **
+   No, because there is not an automatical mechanism to update the HAProxy configuration when we add web server, so that we have to manually update the configuration of the load balancer.
 
 2. <a name="M2"></a>**[M2]** Describe what you need to do to add new
    `webapp` container to the infrastructure. Give the exact steps of
@@ -49,7 +49,7 @@ title: Lab 04 - Docker
    done. Hint: You probably have to modify some configuration and
    script files in a Docker image.
    
-   **Answer**
+   **Answer : **
    
 
 3. <a name="M3"></a>**[M3]** Based on your previous answers, you have
