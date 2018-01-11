@@ -451,7 +451,8 @@ content as in the previous task.
    what is happening during this task. Explain in your own words why
    are we installing a process supervisor. Do not hesitate to do more
    research and to find more articles on that topic to illustrate the
-   problem.
+   problem. 
+   **Answer :** the main difficulty in this task was to stop, restart, stop, restart... containers after made changes. The other dificulty was to work directly on vagrant, state of file and access of it on vagrant it's slow and incohéret.
 
 
 ### <a name="task-2"></a>Task 2: Add a tool to manage membership in the web server cluster
